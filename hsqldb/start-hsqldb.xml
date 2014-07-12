@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<project name="springapp" basedir="." default="startdb">
+
+	<property name="web.dir" value="../WebContent" />
+
+	<path id="master-classpath">
+		<fileset dir="${web.dir}/WEB-INF/lib">
+			<include name="*.jar" />
+		</fileset>
+	</path>
+
+	<target name="startdb" description="Run HSQL database server">
+		<java classname="org.hsqldb.server.Server" fork="yes" classpathref="master-classpath" failonerror="true">
+			<arg value="-database test" />
+		</java>
+	</target>
+	
+	<target name="hsqldb-stop">
+	  <sql
+	    classpathref="master-classpath"
+	    driver="org.hsqldb.jdbcDriver"
+	    url="jdbc:hsqldb:hsql://localhost"
+	    userid="sa" password=""
+	    autocommit="true">SHUTDOWN</sql>
+	</target>
+
+</project>

@@ -1,0 +1,20 @@
+<web-app>
+    <servlet>
+        <servlet-name>usuario</servlet-name>
+        <servlet-class>agenda.servlet.UsuarioServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>contacto</servlet-name>
+        <servlet-class>agenda.servlet.ContactoServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>usuario</servlet-name>
+        <url-pattern>/P.U./*</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>contacto</servlet-name>
+        <url-pattern>/P.C./*</url-pattern>
+    </servlet-mapping>
+
+</web-app>

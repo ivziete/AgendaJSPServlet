@@ -1,0 +1,135 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<TITLE> 11/25/2004 06:40:38 pm -0300 - Open WebMail </TITLE>
+<LINK rel="shortcut icon" href="openwebmail.ico" tppabs="http://www.mundohelado.com/openwebmail/images/openwebmail.ico">
+</HEAD><BODY ONHELP="window.open('/openwebmail/help/es/index.html', '_help'); return false;" BACKGROUND="Globe.gif" tppabs="http://www.mundohelado.com/openwebmail/images/backgrounds/Globe.gif" BGCOLOR="#FFFFFF">
+<style type="text/css">
+<!--
+body {  
+    background-image: url(/openwebmail/images/backgrounds/Globe.gif);
+    background-repeat: repeat;
+    font-family: Arial, Helvetica, sans-serif; font-size: 10pt
+     }
+th   {  font-family: Arial, Helvetica, sans-serif; font-size: 10pt; font-weight: bold; background-color: #D3DCE3;}
+td   {  font-family: Arial, Helvetica, sans-serif; font-size: 10pt;}
+td.msgbody   {  font-family:  Arial, Helvetica, sans-serif; font-size: 10pt;}
+form   {  font-family: Arial, Helvetica, sans-serif; font-size: 10pt}
+h1   {  font-family: Arial, Helvetica, sans-serif; font-size: 16pt; font-weight: bold}
+A:link    {  font-family: Arial, Helvetica, sans-serif; font-size: 10pt; text-decoration: none; color: blue}
+A:visited {  font-family: Arial, Helvetica, sans-serif; font-size: 10pt; text-decoration: none; color: blue}
+A:hover   {  font-family: Arial, Helvetica, sans-serif; font-size: 10pt; text-decoration: none; color: red}
+A.msgbody:link    {  font-family:  Arial, Helvetica, sans-serif; font-size: 10pt; text-decoration: none; color: blue}
+A.msgbody:visited {  font-family:  Arial, Helvetica, sans-serif; font-size: 10pt; text-decoration: none; color: blue}
+A.msgbody:hover   {  font-family:  Arial, Helvetica, sans-serif; font-size: 10pt; text-decoration: none; color: red}
+A:link.nav {  font-family: Arial, Helvetica, sans-serif; color: #000000}
+A:visited.nav {  font-family: Arial, Helvetica, sans-serif; color: #000000}
+A:hover.nav {  font-family: Arial, Helvetica, sans-serif; color: red;}
+.nav {  font-family: Arial, Helvetica, sans-serif; color: #000000}
+.medtext { font-size: 9pt;}
+.smalltext { font-size: 8pt;}
+-->
+
+</style>
+<FONT FACE="Arial, Helvetica">
+<p align="center">
+<a href="javascript:if(confirm('http://openwebmail.org/  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?'))window.location='http://openwebmail.org/'" tppabs="http://openwebmail.org/">
+
+<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"
+  codebase="http://active.macromedia.com/flash2/cabs/swflash.cab#version=4,0,0,0"
+  id="index" width="200" height="100">
+  <param name="movie" value="ivan.swf">
+  <param name="quality" value="high">
+  <param name="bgcolor" value="#FFFFFF">
+  <embed name="index" src="index.swf" quality="high" bgcolor="#FFFFFF"
+    width="700" height="500"
+    type="application/x-shockwave-flash"
+    pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash">
+  </embed>
+</object>
+
+<table border="0" align="center" width="260" cellpadding="0" cellspacing="0">
+<tr><td bgcolor="#3161bd" background="bg-titleblue.gif" tppabs="http://www.mundohelado.com/openwebmail/images/bg-titleblue.gif">
+&nbsp;<font color="#FFFFFF" face="Arial, Helvetica" size="3"><B>Inicio de sesi&oacute;n</B></FONT>
+</td></tr><tr><td align="center" bgcolor="#3161bd">
+
+<table width="100%" cellpadding="0" cellspacing="1" border="0">
+<tr>
+<td bgcolor=#ffffff>
+<FORM METHOD="POST" ACTION="http://www.mundohelado.com/openwebmail-cgi/openwebmail.pl" ENCTYPE="application/x-www-form-urlencoded" NAME="login">
+<BR>
+<table align=center border=0 cellspacing=2 cellpadding=0>
+<tr>
+<td align="right" nowrap>Usuario: </td><td><INPUT TYPE="text" NAME="loginname"  SIZE=12 ONCHANGE="focuspwd()"></td>
+</tr><tr>
+<td align="right" nowrap>Contrase&ntilde;a: </td><td><INPUT TYPE="password" NAME="password"  SIZE=12 ONCHANGE="focusloginbutton()"></td>
+<!--
+</tr><tr>
+<td align="right" nowrap>Dominio: </td><td>@@@DOMAINMENU@@@</td>
+-->
+</tr><tr>
+<td align=center>
+<table><tr><td><INPUT TYPE="submit" NAME="loginbutton" VALUE="Ingresar"></td></tr></table>
+</td>
+<td align=center>
+<table><tr><td><font size=1>Usar compresión<br>HTTP</font></td><td><INPUT TYPE="checkbox" NAME="httpcompress" VALUE="1" DISABLED="1"></td></tr></table>
+</td>
+</tr>
+</table>
+<BR>
+</td>
+<INPUT TYPE="hidden" NAME=".cgifields" VALUE="httpcompress">
+</FORM>
+</tr></table>
+
+</td></tr></table>
+
+<script language="JavaScript">
+<!--
+
+   if (document.login.loginname.value == "") {
+      document.login.loginname.focus()
+   } else {
+      document.login.password.focus()
+   }
+
+   function focuspwd()
+   {
+      document.login.password.focus();
+      return(true);
+   }
+
+   function focusloginbutton()
+   {
+      document.login.loginbutton.focus();
+      return (true);
+   }
+
+   function httpcompresshelp()
+   {
+      if (document.login.httpcompress.checked) {
+         alert(
+"La compresión HTTP puede reducir el uso de ancho de banda entre su computadora y el servidor de webmail,"+
+"pero existen algunos problemas de compatibilidad:\n\n"+
+"1. algunos servidores proxy sólo soportan compresión HTTP mediante HTTP 1.1, "+
+"usted puede tener que habilitar el soporte para HTTP 1.1 en su navegador.\n"+
+"2. algunos servidores proxy no soportan compresión HTTP en absoluto, "+
+"usted puede tener que configurar al servidor de webmail como directamente conectado en la configuración de su navegador.\n"+
+"3. algunos navegadores tienen problemas usando compresión HTTP junto con SSL.\n"+
+"4. algunos navegadores dicen soportar compresión HTTP cuando en realidad no lo hacen.\n\n"+
+"Por lo tanto si usted encuentra algun problema, por favor, inicie la sesión nuevamente sin habilitar esta opción.\n"
+         );
+      }
+      return(true);
+   }
+
+//-->
+</script>
+<p align="center">
+<br>
+<a href="javascript:if(confirm('http://openwebmail.org/openwebmail/  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?'))window.location='http://openwebmail.org/openwebmail/'" tppabs="http://openwebmail.org/openwebmail/" target="_blank">Open WebMail</a>
+version 2.30
+
+<br>
+</p>
+</BODY></HTML>
